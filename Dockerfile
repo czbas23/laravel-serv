@@ -1,7 +1,7 @@
 FROM php:7.3-fpm-alpine
 
 RUN apk update && \
-        apk add --no-cache git zip curl bash sh freetype libpng libjpeg-turbo zlib libzip postgresql && \
+        apk add --no-cache git zip curl bash freetype libpng libjpeg-turbo zlib libzip postgresql && \
 
         apk add --no-cache libxml2-dev curl-dev freetype-dev libpng-dev libjpeg-turbo-dev zlib-dev libzip-dev postgresql-dev && \
 
